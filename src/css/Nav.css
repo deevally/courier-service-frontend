@@ -1,0 +1,48 @@
+:root {
+  --color-darkGreen: #013444;
+  --color-lightGreen: #51b64b;
+  --color-vggBlue: #2992d0;
+  --color--grey-text: #333;
+}
+
+nav {
+  background-color: #020607af;
+font-size: 20px;
+  color: black;
+}
+
+.navbar {
+  padding: 0 1rem !important;
+}
+
+.navbar li.nav-item a.nav-link:active,
+.navbar li.nav-item a.nav-link:visited,
+.navbar li.nav-item a.nav-link:link {
+  font-size: 20px;
+  color: black;
+
+}
+
+.navbar li.nav-item a.nav-link:hover {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid skyblue;
+}
+
+
+.navbar li.nav-item.active a.nav-link {
+  color: var(--color-lightGreen)
+}
+
+.nav-item {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  letter-spacing: .3rem;
+
+}
+
+.selectedLink {
+  border-bottom: 2px solid skyblue;
+}

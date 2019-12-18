@@ -1,0 +1,181 @@
+:root {
+  --color-darkGreen: #013444;
+  --color-lightGreen: #51b64b;
+  --color-vggBlue: #2992d0;
+  --color--grey-text: #333;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container-fluid.Values {
+  background-color: #013444;
+  height: auto;
+  color: white;
+  margin: 0 auto;
+}
+.valuesRows {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  background-color: var(--color-darkGreen);
+  width: 100%;
+  padding: 5rem;
+  padding-bottom: 0;
+  color: white;
+}
+.contactList {
+  list-style: none;
+}
+.contactList a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.footerText {
+  font-size: 1.3rem;
+}
+
+.text-p {
+  font-size: 1.5rem;
+}
+
+.text-p1 {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.title-heading {
+  font-weight: bold;
+}
+
+.title-heading-comp{
+  color:var(--color-darkGreen);
+  padding-top: 4rem;
+    font-size: 4rem;
+
+}
+.prag{
+  width: 50%;
+}
+.title-heading-prag {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.rel{
+  color: var(--color-vggBlue);
+}
+
+.imgs{
+ background-image: linear-gradient(to right bottom, rgba(65, 105, 225, 0.5), rgba(38, 6, 240, 0.5)), url("../assets//images/parcel3.jpg");
+  background-size: cover;
+  background-position: top;
+  width:30rem;
+  height: 200px;
+  vertical-align: middle;
+  color: white;
+  /* text-align: center; */
+  font-size: 3rem;
+  padding: 3rem;
+  border-radius: 1rem;
+   transition: all .2s ease-in-out;
+  /* position: relative; */
+
+}
+
+.imgs:hover{
+  color: var(--color-vggBlue);
+    transform: scale(1.08);
+}
+
+/* ======= */
+.footerText:first-child {
+  padding-top: 42px;
+}
+.footerBase {
+  margin-top: 1rem;
+}
+.lastfooterText {
+  float: right;
+}
+
+/* Small devices (landscape phones, 576px and up)  Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .valuesRows {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .coreValues {
+    width: 50%;
+    margin: auto;
+  }
+  .coreValues h2 {
+    font-size: 1rem;
+  }
+  .valuesRows {
+    /* margin-left: 4.5rem; */
+  }
+  .footer {
+    width: 95%;
+    margin-top: -53px;
+  }
+  .footerBase {
+    margin-top: 2rem;
+  }
+  .footerText:last-child {
+    float: left;
+  }
+  .coreValuesimg {
+    margin-top: 2rem;
+  }
+}
+
+/* Specific for tablet */
+@media (min-width: 767px) and (max-width: 768px) {
+  .valuesRows {
+    width: 90%;
+    margin: auto;
+  }
+  .coreValues {
+    width: 33%;
+    margin: auto;
+  }
+  .valuesRows {
+    /* margin-left: 9rem; */
+  }
+  .coreValues h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+  }
+}

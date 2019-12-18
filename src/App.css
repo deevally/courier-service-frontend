@@ -1,0 +1,50 @@
+:root {
+  --color-darkGreen: #013444;
+  --color-lightGreen: #51b64b;
+  --color-vggBlue: #2992d0;
+  --color--grey-text: #333;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-p {
+  font-size: 1.7rem;
+}
+
+.text-p1 {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.title-heading {
+  font-weight: bold;
+}

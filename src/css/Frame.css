@@ -1,0 +1,44 @@
+.frameContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  /* padding: 60px 45px; */
+}
+
+.frameText h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.frameText hr {
+  width: 200px;
+  border: 2px solid #2992d0;
+}
+
+ .viewbtntwo {
+  margin-top: 1.2rem;
+  padding: 0.4rem 4rem;
+  font-size: 2rem;
+  background: var(--color-darkGreen);
+  color: #fff;
+  border-radius: 4rem;
+  border: 1.5px solid #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.viewbtntwo:hover {
+  border: 1.5px solid var(--color-darkGreen);
+  transform: scale(1.02);
+  background: none;
+  color: var(--color-darkGreen);
+}
+
+.viewbtntwo:focus {
+  outline: none;
+}
+
+.vgg-section-paragraph {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--color-darkGreen);
+}
