@@ -15,7 +15,7 @@ function App(){
           <Route exact path="/" component={index} />
           <Route exact path="/login" component={login} />
           <Route exact path="/shipping/:shippingId" component={Ship} />
-          <Route exact path="/create" component={CreateShipment} />
+          <PrivateRoute exact path="/create" component={CreateShipment} />
           <PrivateRoute path="/admin" component={AdminPage} />
           {/* <Route exact path="/admin" component={AdminPage} /> */}
           <Route exact path="*" component={PageNotFound} />
