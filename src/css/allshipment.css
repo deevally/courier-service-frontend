@@ -1,0 +1,53 @@
+.tableBorder{
+  box-shadow: 5px 3px 5px 3px #888888;
+  margin: 5rem .6rem 0 20rem;
+  padding-left: 3rem;
+}
+#title {
+    text-align: center;
+    font-family: arial, sans-serif;
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  #jobListing {
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  
+ tr {
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 100%;
+    padding: 5rem;
+
+  }
+  #jobListing td, #jobListing th {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  #jobListing tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #jobListing tr:hover {background-color: #ddd;}
+  button{
+    border: none;
+    border-radius: 2px;
+    padding: .5em;
+    color: #fff;
+    background-color: #f06161;
+  }
+  #jobListing th {
+    padding: 12px 0 12px 0;
+    text-align: center;
+    background-color: rgb(76, 119, 175);
+    color: white;
+  }
+
+  #shipListing{
+    width:80%
+  }
