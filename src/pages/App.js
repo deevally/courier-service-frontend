@@ -5,6 +5,7 @@ import index from './index';
 import login from "../pages/login";
 import AdminPage from "./AdminPage";
 import PageNotFound from '../components/NotFound';
+import Ship from './Ship'
 import { PrivateRoute } from "./PrivateRoute";
 function App(){
     return (
@@ -12,6 +13,7 @@ function App(){
         <Switch>
           <Route exact path="/" component={index} />
           <Route exact path="/login" component={login} />
+          <Route exact path="/shipping/:shippingId" component={Ship} />
           <PrivateRoute path="/admin" component={AdminPage} />
           {/* <Route exact path="/admin" component={AdminPage} /> */}
           <Route exact path="*" component={PageNotFound} />

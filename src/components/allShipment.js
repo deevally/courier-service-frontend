@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import { BaseUrl } from "../utils/baseUrl";
 import axios from "axios";
 import "../css/allshipment.css"
@@ -31,10 +32,11 @@ class allShipment extends Component {
     try {
       const shipment = await axios.get(url);
       this.setState({ shipment: shipment.data.docs });
-    } catch (error) {}
+    } catch (error) {
+        console.log(error)
+    }
 
-    console.log("SHIPPMENTSSSS");
-    console.log(this.state.shipment);
+   
   }
 
   handleDelete = id => {
@@ -85,6 +87,7 @@ class allShipment extends Component {
         packageDetails,
         timeShipped
       } = ship;
+
       return (
         <tr key={_id}>
           <td>{i++}</td>
@@ -93,7 +96,12 @@ class allShipment extends Component {
           <td>{location}</td>
           <td>{packageDetails}</td>
           <td>
-            <button onClick={() => this.handleDelete(_id)}>Delete</button>
+            <button className="delete" onClick={() => this.handleDelete(_id)}>
+              Delete
+            </button>
+            <button className="view" onClick={() => this.ViewMore(_id)}>
+              View More Details
+            </button>
           </td>
         </tr>
       );
@@ -105,6 +113,19 @@ class allShipment extends Component {
     localStorage.clear();
     history.push("/login");
   };
+
+  ViewMore = shippingId => {
+      const { history } = this.props;
+    history.push(`/shipping/${shippingId}`);
+
+  };
+
+  gotoJobDetails = JobId => {
+    const { history } = this.props;
+    history.push(`/jobdetails/${JobId}`);
+  };
+
+
   render() {
     return (
       <div>
@@ -113,6 +134,7 @@ class allShipment extends Component {
           //   style={{ paddingTop: "10rem", textAlign: "center" }}
         >
           <h2 id="title">All shipments</h2>
+          <button onClick={this.Logout}>Logout</button>
           <table id="shipListing" className="mx-auto">
             <tbody>
               <tr>{this.renderTableHeader()}</tr>
@@ -125,4 +147,4 @@ class allShipment extends Component {
   }
 }
 
-export default allShipment;
+export default withRouter(allShipment);
