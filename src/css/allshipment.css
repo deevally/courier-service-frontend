@@ -61,3 +61,26 @@
   #shipListing{
     width:80%
   }
+
+
+  .btn3{
+      border-radius: 1rem;
+    padding: 1rem;
+    background-color: #013444;
+    color: white;
+    font-size: 1rem;
+
+  }
+
+  .ships{
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    margin: 3rem;
+    font-size: 3rem;
+  }
+
+  .ships h2{
+    font-size: 3rem;
+       padding-bottom: 2rem;
+  }

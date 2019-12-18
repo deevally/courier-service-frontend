@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { BaseUrl } from "../utils/baseUrl";
 import axios from "axios";
-import "../css/allshipment.css"
+import "../css/allshipment.css";
 class allShipment extends Component {
   state = {
     shipment: [],
@@ -33,10 +33,8 @@ class allShipment extends Component {
       const shipment = await axios.get(url);
       this.setState({ shipment: shipment.data.docs });
     } catch (error) {
-        console.log(error)
+      console.log(error);
     }
-
-   
   }
 
   handleDelete = id => {
@@ -114,17 +112,20 @@ class allShipment extends Component {
     history.push("/login");
   };
 
-  ViewMore = shippingId => {
-      const { history } = this.props;
-    history.push(`/shipping/${shippingId}`);
+  CreateShipment = () => {
+    const { history } = this.props;
+    history.push("/create");
+  };
 
+  ViewMore = shippingId => {
+    const { history } = this.props;
+    history.push(`/shipping/${shippingId}`);
   };
 
   gotoJobDetails = JobId => {
     const { history } = this.props;
     history.push(`/jobdetails/${JobId}`);
   };
-
 
   render() {
     return (
@@ -133,8 +134,16 @@ class allShipment extends Component {
           className="tableBorder"
           //   style={{ paddingTop: "10rem", textAlign: "center" }}
         >
-          <h2 id="title">All shipments</h2>
-          <button onClick={this.Logout}>Logout</button>
+          <div className="container ships">
+            <h2 id="">All shipments</h2>
+            <button className="btn3" onClick={this.Logout}>
+              Logout
+            </button>
+            <button className="btn3" onClick={this.CreateShipment}>
+              Create Shipment
+            </button>
+          </div>
+
           <table id="shipListing" className="mx-auto">
             <tbody>
               <tr>{this.renderTableHeader()}</tr>

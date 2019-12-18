@@ -89,8 +89,15 @@ class ShipmentDetails extends Component {
               </tr>
             </tbody>
           </table>
-          <button onClick={() => this.gotoAdminPage}>Go to Admin page</button>
-          <button className="btn">Update</button>
+          <div
+            className="container"
+            style={{ textAlign: "center", padding: "3rem" }}
+          >
+            <button className="btn2" onClick={this.gotoAdminPage}>
+              Go back to Admin page
+            </button>
+            <button className="btn">Update</button>
+          </div>
         </div>
       </div>
     );

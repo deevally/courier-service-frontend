@@ -19,7 +19,7 @@ left: 9rem;
 
 .join_team{
     font-size: 6rem;
-    color: #fff;
+    color: white;
 }
 
 
@@ -271,7 +271,7 @@ color:  var(--color-darkGreen);
 }
 
 .landing-header p {
-  color: black;
+  color: white;
 }
 
 
@@ -306,7 +306,7 @@ color:  var(--color-darkGreen);
 
 
 .slideshow li:nth-child(1) { 
-  background-image: url("../assets/images/parcel1.jpg") 
+  background-image: url("../assets/images/parcel3.jpg") 
 }
 .slideshow li:nth-child(2) { 
   background-image: url("../assets/images/parcel4.jpg");
@@ -321,7 +321,7 @@ color:  var(--color-darkGreen);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url("../assets/images/parcel4.jpg");
+  background-image: url("../assets/images/parcel3.jpg");
   animation-delay: 40s; 
 }
 

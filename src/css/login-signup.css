@@ -3,13 +3,13 @@
   background: #fcfcfe;
 }
 
-.login-img {
+/* .login-img {
   background-image: url("../assets/images/logo5.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
-}
+} */
 
 .container-parent {
   position: relative;

@@ -4,7 +4,7 @@ import AllShipment from "../components/allShipment";
 const AdminPage = () => {
     return (
       <div>
-        <Nav createShipment="create shipment" LogOUT="Logout" />
+        <Nav />
         <AllShipment />
       </div>
     );

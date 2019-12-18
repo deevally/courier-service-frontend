@@ -4,28 +4,32 @@ import "../css/App.css";
 const Footer = () => {
   return (
     <div>
-      {/* <div id="contactus"className="row">
-        <div className="col-lg-6">
-          <p className="footerText ">
-            Venture Garden Group is a holding company for a group of financial
-            technology entities dedicated to the innovative and data-driven
-            financial technology solutions.
+      <div id="contactus" className="row">
+        <div className="col-md-4">
+          <h3 className="font-weight-bold pb-4">Our Corporate Office</h3>
+          <p className="text-left footerText">
+            {" "}
+            Vibranium Valley,
+            <br />
+            42, Local Airport Road,
+            <br />
+            Lagos.
           </p>
         </div>
-        <div className="col-lg-6">
+        <div className="col-md-4">
+          {/* <h3 className="font-weight-bold pb-4">Our Corporate Office</h3>
+          <p className="text-left footerText">
+            {" "}
+            Vibranium Valley,
+            <br />
+            42, Local Airport Road,
+            <br />
+            Lagos.
+          </p> */}
+        </div>
+        <div className="col-md-4">
           <div className="row">
-            <div className="col-lg-6">
-              <h3 className="font-weight-bold pb-4">Our Corporate Office</h3>
-              <p className="text-left footerText">
-                {" "}
-                Vibranium Valley,
-                <br />
-                42, Local Airport Road,
-                <br />
-                Lagos.
-              </p>
-            </div>
-            <div className="col-lg-6">
+            <div className="col-md-4">
               <h3 className="font-weight-bold pb-4">Contact</h3>
               <ul className="contactList">
                 <li className="">
@@ -42,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="row footerBase">
         {/* <div className=" col-md-12 col-xs-12">
           <p className="font-italic footerText">

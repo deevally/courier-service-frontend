@@ -32,7 +32,7 @@ const WorldClass = () => {
               </div>
               <div className="col-md-4 ">
                 {/* <h2 className="title-heading">Prompt</h2> */}
-                <p className="text-p mt-4 imgs">
+                <p className="text-p mt-4 imgs1">
                   Ecommerce
                   <br />
                   ........
@@ -42,7 +42,7 @@ const WorldClass = () => {
                 {/* <h2 className="title-heading">
                   Large and Heavy parcel Delivery
                 </h2> */}
-                <p className="text-p mt-4 imgs">
+                <p className="text-p mt-4 imgs2">
                   International
                   <br />
                   ........
