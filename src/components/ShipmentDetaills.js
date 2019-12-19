@@ -28,7 +28,16 @@ class ShipmentDetails extends Component {
 
   componentDidMount() {
     this.getSingleShipment();
+    console.log(this.props.match.params);
   }
+
+  gotoEditPage = () => {
+    this.props.history.push({
+      pathname: "/edit",
+      search: "?query=edit",
+      state: { detail: this.props.match.params }
+    });
+  };
 
   updateShipping = shippingId => {
     const { history } = this.props;
@@ -96,7 +105,9 @@ class ShipmentDetails extends Component {
             <button className="btn2" onClick={this.gotoAdminPage}>
               Go back to Admin page
             </button>
-            <button className="btn">Update</button>
+            <button className="btn" onClick={this.gotoEditPage}>
+              Update
+            </button>
           </div>
         </div>
       </div>

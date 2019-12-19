@@ -8,6 +8,7 @@ import PageNotFound from '../components/NotFound';
 import Ship from './Ship';
 import CreateShipment from "./Create";
 import { PrivateRoute } from "./PrivateRoute";
+import Update from "./Update";
 function App(){
     return (
       <Router>
@@ -16,6 +17,7 @@ function App(){
           <Route exact path="/login" component={login} />
           <Route exact path="/shipping/:shippingId" component={Ship} />
           <PrivateRoute exact path="/create" component={CreateShipment} />
+          <PrivateRoute exact path="/edit" component={Update} />
           <PrivateRoute path="/admin" component={AdminPage} />
           {/* <Route exact path="/admin" component={AdminPage} /> */}
           <Route exact path="*" component={PageNotFound} />
