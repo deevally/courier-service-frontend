@@ -117,6 +117,11 @@ class allShipment extends Component {
     history.push("/create");
   };
 
+  goHome = () => {
+    const { history } = this.props;
+    history.push("/");
+  };
+
   ViewMore = shippingId => {
     const { history } = this.props;
     history.push(`/shipping/${shippingId}`);
@@ -142,6 +147,9 @@ class allShipment extends Component {
             <button className="btn3" onClick={this.CreateShipment}>
               Create Shipment
             </button>
+            {/* <button className="btn3" onClick={this.goHome}>
+              Home
+            </button> */}
           </div>
 
           <table id="shipListing" className="mx-auto">
