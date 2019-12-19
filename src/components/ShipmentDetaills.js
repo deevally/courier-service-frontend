@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { BaseUrl } from "../utils/baseUrl.js";
-import { Container, Row, Col } from "react-bootstrap";
 
 import Axios from "axios";
-import Nav from "../components/Nav";
-import Button from "../components/Button";
+// import Nav from "../components/Nav";
+// import Button from "../components/Button";
 
 class ShipmentDetails extends Component {
   state = {

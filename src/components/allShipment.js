@@ -70,20 +70,21 @@ class allShipment extends Component {
         _id,
         RecieverAddress,
         RecieverName,
-        ShippingStatus,
-        TrackingNumber,
-        dateArrival,
-        dateShipped,
-        deliveryType,
-        itemColor,
-        itemContent,
-        itemHeight,
-        itemWeight,
-        location,
-        locationFrom,
-        locationTo,
-        packageDetails,
-        timeShipped
+           location,
+        packageDetails
+        // ShippingStatus,
+        // TrackingNumber,
+        // dateArrival,
+        // dateShipped,
+        // deliveryType,
+        // itemColor,
+        // itemContent,
+        // itemHeight,
+        // itemWeight,
+        // locationFrom,
+        // locationTo,
+        // timeShipped,
+     
       } = ship;
 
       return (
@@ -127,10 +128,6 @@ class allShipment extends Component {
     history.push(`/shipping/${shippingId}`);
   };
 
-  gotoJobDetails = JobId => {
-    const { history } = this.props;
-    history.push(`/jobdetails/${JobId}`);
-  };
 
   render() {
     return (

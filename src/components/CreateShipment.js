@@ -3,7 +3,7 @@ import Axios from "axios";
 import { withRouter } from "react-router-dom";
 import Nav from "../components/Nav";
 import Button from "../components/Button";
-import FormErrors from "../components/formErrors";
+// import FormErrors from "../components/formErrors";
 import "../css/login-signup.css";
 import { BaseUrl } from "../utils/baseUrl";
 
@@ -11,7 +11,7 @@ import { BaseUrl } from "../utils/baseUrl";
 const url = `${BaseUrl}/createshipping`;
 
 
-class Signup extends Component {
+class CreatePackage extends Component {
   state = {
       packageExists: {
       status: false,
@@ -369,5 +369,5 @@ class Signup extends Component {
   }
 }
 
-export default withRouter(Signup);
+export default withRouter(CreatePackage);
 

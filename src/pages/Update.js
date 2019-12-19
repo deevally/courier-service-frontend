@@ -6,7 +6,7 @@ import Button from "../components/Button";
 import "../css/login-signup.css";
 import { BaseUrl } from "../utils/baseUrl";
 
-class Signup extends Component {
+class Update extends Component {
   state = {
     packageExists: {
       status: false,
@@ -129,7 +129,7 @@ class Signup extends Component {
         }
       } = this.props;
       const url = `${BaseUrl}/shipping/${shippingId}`;
-      const pack = await Axios.patch(url, user);
+       await Axios.patch(url, user);
       this.props.history.push("/admin");
     } catch (error) {
       this.setState({
@@ -345,7 +345,7 @@ class Signup extends Component {
                   myBtnClass="form-btn"
                   btnType=""
                 >
-                  {submitting === false ? "Update" : "Update..."}
+                  {submitting === false ? "Update" : "Updating..."}
                 </Button>
               </form>
               <p className="member"></p>
@@ -357,4 +357,4 @@ class Signup extends Component {
   }
 }
 
-export default withRouter(Signup);
+export default withRouter(Update);
